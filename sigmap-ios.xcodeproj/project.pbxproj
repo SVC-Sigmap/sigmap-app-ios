@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD102581297F5D9E0080774D /* sigmap_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD102580297F5D9E0080774D /* sigmap_iosApp.swift */; };
+		AD102583297F5D9E0080774D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD102582297F5D9E0080774D /* ContentView.swift */; };
+		AD102585297F5D9F0080774D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD102584297F5D9F0080774D /* Assets.xcassets */; };
+		AD102588297F5D9F0080774D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD102587297F5D9F0080774D /* Preview Assets.xcassets */; };
+		AD102592297F5DA00080774D /* sigmap_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD102591297F5DA00080774D /* sigmap_iosTests.swift */; };
+		AD10259C297F5DA00080774D /* sigmap_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD10259B297F5DA00080774D /* sigmap_iosUITests.swift */; };
+		AD10259E297F5DA00080774D /* sigmap_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD10259D297F5DA00080774D /* sigmap_iosUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD10258E297F5DA00080774D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD102575297F5D9D0080774D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD10257C297F5D9E0080774D;
+			remoteInfo = "sigmap-ios";
+		};
+		AD102598297F5DA00080774D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD102575297F5D9D0080774D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD10257C297F5D9E0080774D;
+			remoteInfo = "sigmap-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AD10257D297F5D9E0080774D /* sigmap-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sigmap-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD102580297F5D9E0080774D /* sigmap_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sigmap_iosApp.swift; sourceTree = "<group>"; };
+		AD102582297F5D9E0080774D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AD102584297F5D9F0080774D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD102587297F5D9F0080774D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AD10258D297F5DA00080774D /* sigmap-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sigmap-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD102591297F5DA00080774D /* sigmap_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sigmap_iosTests.swift; sourceTree = "<group>"; };
+		AD102597297F5DA00080774D /* sigmap-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sigmap-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD10259B297F5DA00080774D /* sigmap_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sigmap_iosUITests.swift; sourceTree = "<group>"; };
+		AD10259D297F5DA00080774D /* sigmap_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sigmap_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD10257A297F5D9E0080774D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD10258A297F5DA00080774D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD102594297F5DA00080774D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD102574297F5D9D0080774D = {
+			isa = PBXGroup;
+			children = (
+				AD10257F297F5D9E0080774D /* sigmap-ios */,
+				AD102590297F5DA00080774D /* sigmap-iosTests */,
+				AD10259A297F5DA00080774D /* sigmap-iosUITests */,
+				AD10257E297F5D9E0080774D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD10257E297F5D9E0080774D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD10257D297F5D9E0080774D /* sigmap-ios.app */,
+				AD10258D297F5DA00080774D /* sigmap-iosTests.xctest */,
+				AD102597297F5DA00080774D /* sigmap-iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD10257F297F5D9E0080774D /* sigmap-ios */ = {
+			isa = PBXGroup;
+			children = (
+				AD102580297F5D9E0080774D /* sigmap_iosApp.swift */,
+				AD102582297F5D9E0080774D /* ContentView.swift */,
+				AD102584297F5D9F0080774D /* Assets.xcassets */,
+				AD102586297F5D9F0080774D /* Preview Content */,
+			);
+			path = "sigmap-ios";
+			sourceTree = "<group>";
+		};
+		AD102586297F5D9F0080774D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AD102587297F5D9F0080774D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AD102590297F5DA00080774D /* sigmap-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD102591297F5DA00080774D /* sigmap_iosTests.swift */,
+			);
+			path = "sigmap-iosTests";
+			sourceTree = "<group>";
+		};
+		AD10259A297F5DA00080774D /* sigmap-iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AD10259B297F5DA00080774D /* sigmap_iosUITests.swift */,
+				AD10259D297F5DA00080774D /* sigmap_iosUITestsLaunchTests.swift */,
+			);
+			path = "sigmap-iosUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD10257C297F5D9E0080774D /* sigmap-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD1025A1297F5DA00080774D /* Build configuration list for PBXNativeTarget "sigmap-ios" */;
+			buildPhases = (
+				AD102579297F5D9E0080774D /* Sources */,
+				AD10257A297F5D9E0080774D /* Frameworks */,
+				AD10257B297F5D9E0080774D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "sigmap-ios";
+			productName = "sigmap-ios";
+			productReference = AD10257D297F5D9E0080774D /* sigmap-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD10258C297F5DA00080774D /* sigmap-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD1025A4297F5DA00080774D /* Build configuration list for PBXNativeTarget "sigmap-iosTests" */;
+			buildPhases = (
+				AD102589297F5DA00080774D /* Sources */,
+				AD10258A297F5DA00080774D /* Frameworks */,
+				AD10258B297F5DA00080774D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD10258F297F5DA00080774D /* PBXTargetDependency */,
+			);
+			name = "sigmap-iosTests";
+			productName = "sigmap-iosTests";
+			productReference = AD10258D297F5DA00080774D /* sigmap-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AD102596297F5DA00080774D /* sigmap-iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD1025A7297F5DA00080774D /* Build configuration list for PBXNativeTarget "sigmap-iosUITests" */;
+			buildPhases = (
+				AD102593297F5DA00080774D /* Sources */,
+				AD102594297F5DA00080774D /* Frameworks */,
+				AD102595297F5DA00080774D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD102599297F5DA00080774D /* PBXTargetDependency */,
+			);
+			name = "sigmap-iosUITests";
+			productName = "sigmap-iosUITests";
+			productReference = AD102597297F5DA00080774D /* sigmap-iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD102575297F5D9D0080774D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					AD10257C297F5D9E0080774D = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					AD10258C297F5DA00080774D = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = AD10257C297F5D9E0080774D;
+					};
+					AD102596297F5DA00080774D = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = AD10257C297F5D9E0080774D;
+					};
+				};
+			};
+			buildConfigurationList = AD102578297F5D9D0080774D /* Build configuration list for PBXProject "sigmap-ios" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD102574297F5D9D0080774D;
+			productRefGroup = AD10257E297F5D9E0080774D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD10257C297F5D9E0080774D /* sigmap-ios */,
+				AD10258C297F5DA00080774D /* sigmap-iosTests */,
+				AD102596297F5DA00080774D /* sigmap-iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD10257B297F5D9E0080774D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD102588297F5D9F0080774D /* Preview Assets.xcassets in Resources */,
+				AD102585297F5D9F0080774D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD10258B297F5DA00080774D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD102595297F5DA00080774D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD102579297F5D9E0080774D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD102583297F5D9E0080774D /* ContentView.swift in Sources */,
+				AD102581297F5D9E0080774D /* sigmap_iosApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD102589297F5DA00080774D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD102592297F5DA00080774D /* sigmap_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD102593297F5DA00080774D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD10259C297F5DA00080774D /* sigmap_iosUITests.swift in Sources */,
+				AD10259E297F5DA00080774D /* sigmap_iosUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD10258F297F5DA00080774D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD10257C297F5D9E0080774D /* sigmap-ios */;
+			targetProxy = AD10258E297F5DA00080774D /* PBXContainerItemProxy */;
+		};
+		AD102599297F5DA00080774D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD10257C297F5D9E0080774D /* sigmap-ios */;
+			targetProxy = AD102598297F5DA00080774D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AD10259F297F5DA00080774D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AD1025A0297F5DA00080774D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD1025A2297F5DA00080774D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"sigmap-ios/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.stvincent.cis.sigmap-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD1025A3297F5DA00080774D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"sigmap-ios/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.stvincent.cis.sigmap-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AD1025A5297F5DA00080774D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.stvincent.cis.sigmap-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sigmap-ios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/sigmap-ios";
+			};
+			name = Debug;
+		};
+		AD1025A6297F5DA00080774D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.stvincent.cis.sigmap-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sigmap-ios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/sigmap-ios";
+			};
+			name = Release;
+		};
+		AD1025A8297F5DA00080774D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.stvincent.cis.sigmap-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "sigmap-ios";
+			};
+			name = Debug;
+		};
+		AD1025A9297F5DA00080774D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.stvincent.cis.sigmap-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "sigmap-ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD102578297F5D9D0080774D /* Build configuration list for PBXProject "sigmap-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD10259F297F5DA00080774D /* Debug */,
+				AD1025A0297F5DA00080774D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD1025A1297F5DA00080774D /* Build configuration list for PBXNativeTarget "sigmap-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD1025A2297F5DA00080774D /* Debug */,
+				AD1025A3297F5DA00080774D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD1025A4297F5DA00080774D /* Build configuration list for PBXNativeTarget "sigmap-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD1025A5297F5DA00080774D /* Debug */,
+				AD1025A6297F5DA00080774D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD1025A7297F5DA00080774D /* Build configuration list for PBXNativeTarget "sigmap-iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD1025A8297F5DA00080774D /* Debug */,
+				AD1025A9297F5DA00080774D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD102575297F5D9D0080774D /* Project object */;
+}
