@@ -8,7 +8,7 @@
 import XCTest
 @testable import sigmap_ios
 
-final class sigmap_iosTests: XCTestCase {
+final class sigmapTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

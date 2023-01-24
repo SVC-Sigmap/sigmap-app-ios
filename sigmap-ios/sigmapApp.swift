@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct sigmap_iosApp: App {
+struct sigmapApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

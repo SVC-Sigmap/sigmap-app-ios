@@ -7,7 +7,7 @@
 
 import XCTest
 
-final class sigmap_iosUITestsLaunchTests: XCTestCase {
+final class sigmapUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
