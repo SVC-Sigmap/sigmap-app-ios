@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>73062403570-emqkb9ihfvunhrand39ubseovg4t8kdv.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.73062403570-emqkb9ihfvunhrand39ubseovg4t8kdv</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBuDzDntiLiBxi3QS7a3LeWKK_jiTBICQg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>73062403570</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>edu.stvincent.cis.sigmap-ios</string>
+	<key>PROJECT_ID</key>
+	<string>sigmap-649cb</string>
+	<key>STORAGE_BUCKET</key>
+	<string>sigmap-649cb.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:73062403570:ios:8862466de3aa98dfa2ef6b</string>
+</dict>
+</plist>

@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E31C64BBFB0E65C821F6D29 /* Pods_sigmap_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2959AA6F1D776DE1A17415CB /* Pods_sigmap_iosTests.framework */; };
+		450540EEEA0E0498D5DDD6B1 /* Pods_sigmap_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F455017D230697E9969387D0 /* Pods_sigmap_ios.framework */; };
+		5B317947A3A0D3990757CC35 /* Pods_sigmap_ios_sigmap_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1DAD16EAE4B07A0FC088466 /* Pods_sigmap_ios_sigmap_iosUITests.framework */; };
 		AD713151298702330068FC1F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD713150298702330068FC1F /* SettingsView.swift */; };
 		AD7131532987034A0068FC1F /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7131522987034A0068FC1F /* LibraryView.swift */; };
+		ADB5E5592988B50D00C12F1E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADB5E5582988B50D00C12F1E /* GoogleService-Info.plist */; };
 		ADE17F172981EC5F002B647D /* sigmap_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE17F162981EC5F002B647D /* sigmap_iosApp.swift */; };
-		ADE17F192981EC5F002B647D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE17F182981EC5F002B647D /* ContentView.swift */; };
+		ADE17F192981EC5F002B647D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE17F182981EC5F002B647D /* HomeView.swift */; };
 		ADE17F1B2981EC61002B647D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE17F1A2981EC61002B647D /* Assets.xcassets */; };
 		ADE17F1E2981EC61002B647D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE17F1D2981EC61002B647D /* Preview Assets.xcassets */; };
 		ADE17F282981EC61002B647D /* sigmap_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE17F272981EC61002B647D /* sigmap_iosTests.swift */; };
@@ -36,12 +40,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0EDBB0178A1B75794C15281D /* Pods-sigmap-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sigmap-iosTests.debug.xcconfig"; path = "Target Support Files/Pods-sigmap-iosTests/Pods-sigmap-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		151474556AEAC5E4D3C9D21A /* Pods-sigmap-ios-sigmap-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sigmap-ios-sigmap-iosUITests.release.xcconfig"; path = "Target Support Files/Pods-sigmap-ios-sigmap-iosUITests/Pods-sigmap-ios-sigmap-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2959AA6F1D776DE1A17415CB /* Pods_sigmap_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sigmap_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32C5006F018878695A7B9DBF /* Pods-sigmap-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sigmap-ios.release.xcconfig"; path = "Target Support Files/Pods-sigmap-ios/Pods-sigmap-ios.release.xcconfig"; sourceTree = "<group>"; };
+		4B5D1EC072AD671AE3950B6E /* Pods-sigmap-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sigmap-iosTests.release.xcconfig"; path = "Target Support Files/Pods-sigmap-iosTests/Pods-sigmap-iosTests.release.xcconfig"; sourceTree = "<group>"; };
+		542F057C884D3F0CBA63E4D7 /* Pods-sigmap-ios-sigmap-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sigmap-ios-sigmap-iosUITests.debug.xcconfig"; path = "Target Support Files/Pods-sigmap-ios-sigmap-iosUITests/Pods-sigmap-ios-sigmap-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AD713150298702330068FC1F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		AD7131522987034A0068FC1F /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		AD7131542987266D0068FC1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		ADB5E5582988B50D00C12F1E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ADE17F132981EC5F002B647D /* sigmap-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sigmap-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADE17F162981EC5F002B647D /* sigmap_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sigmap_iosApp.swift; sourceTree = "<group>"; };
-		ADE17F182981EC5F002B647D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ADE17F182981EC5F002B647D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		ADE17F1A2981EC61002B647D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADE17F1D2981EC61002B647D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ADE17F232981EC61002B647D /* sigmap-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sigmap-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +60,9 @@
 		ADE17F2D2981EC62002B647D /* sigmap-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sigmap-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADE17F312981EC62002B647D /* sigmap_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sigmap_iosUITests.swift; sourceTree = "<group>"; };
 		ADE17F332981EC62002B647D /* sigmap_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sigmap_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C1DAD16EAE4B07A0FC088466 /* Pods_sigmap_ios_sigmap_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sigmap_ios_sigmap_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6949BF32C43D0A7F6E85802 /* Pods-sigmap-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sigmap-ios.debug.xcconfig"; path = "Target Support Files/Pods-sigmap-ios/Pods-sigmap-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		F455017D230697E9969387D0 /* Pods_sigmap_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sigmap_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				450540EEEA0E0498D5DDD6B1 /* Pods_sigmap_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E31C64BBFB0E65C821F6D29 /* Pods_sigmap_iosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +86,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B317947A3A0D3990757CC35 /* Pods_sigmap_ios_sigmap_iosUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6699A052B393D41E30BF0C36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F455017D230697E9969387D0 /* Pods_sigmap_ios.framework */,
+				C1DAD16EAE4B07A0FC088466 /* Pods_sigmap_ios_sigmap_iosUITests.framework */,
+				2959AA6F1D776DE1A17415CB /* Pods_sigmap_iosTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD0BF7B229898AD40066612B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AD7131522987034A0068FC1F /* LibraryView.swift */,
+				AD713150298702330068FC1F /* SettingsView.swift */,
+				ADE17F182981EC5F002B647D /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		ADE17F0A2981EC5F002B647D = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +120,8 @@
 				ADE17F262981EC61002B647D /* sigmap-iosTests */,
 				ADE17F302981EC62002B647D /* sigmap-iosUITests */,
 				ADE17F142981EC5F002B647D /* Products */,
+				C80B4A662AC989A803D0DF23 /* Pods */,
+				6699A052B393D41E30BF0C36 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +138,11 @@
 		ADE17F152981EC5F002B647D /* sigmap-ios */ = {
 			isa = PBXGroup;
 			children = (
-				AD7131542987266D0068FC1F /* Info.plist */,
 				ADE17F162981EC5F002B647D /* sigmap_iosApp.swift */,
-				ADE17F182981EC5F002B647D /* ContentView.swift */,
-				AD713150298702330068FC1F /* SettingsView.swift */,
-				AD7131522987034A0068FC1F /* LibraryView.swift */,
+				AD0BF7B229898AD40066612B /* Views */,
 				ADE17F1A2981EC61002B647D /* Assets.xcassets */,
+				AD7131542987266D0068FC1F /* Info.plist */,
+				ADB5E5582988B50D00C12F1E /* GoogleService-Info.plist */,
 				ADE17F1C2981EC61002B647D /* Preview Content */,
 			);
 			path = "sigmap-ios";
@@ -135,6 +173,19 @@
 			path = "sigmap-iosUITests";
 			sourceTree = "<group>";
 		};
+		C80B4A662AC989A803D0DF23 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6949BF32C43D0A7F6E85802 /* Pods-sigmap-ios.debug.xcconfig */,
+				32C5006F018878695A7B9DBF /* Pods-sigmap-ios.release.xcconfig */,
+				542F057C884D3F0CBA63E4D7 /* Pods-sigmap-ios-sigmap-iosUITests.debug.xcconfig */,
+				151474556AEAC5E4D3C9D21A /* Pods-sigmap-ios-sigmap-iosUITests.release.xcconfig */,
+				0EDBB0178A1B75794C15281D /* Pods-sigmap-iosTests.debug.xcconfig */,
+				4B5D1EC072AD671AE3950B6E /* Pods-sigmap-iosTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,9 +193,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ADE17F372981EC62002B647D /* Build configuration list for PBXNativeTarget "sigmap-ios" */;
 			buildPhases = (
+				4A39A91AD39B621F93F64B81 /* [CP] Check Pods Manifest.lock */,
 				ADE17F0F2981EC5F002B647D /* Sources */,
 				ADE17F102981EC5F002B647D /* Frameworks */,
 				ADE17F112981EC5F002B647D /* Resources */,
+				007AC3F016D5FC4E51BD4C1F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -159,6 +212,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ADE17F3A2981EC62002B647D /* Build configuration list for PBXNativeTarget "sigmap-iosTests" */;
 			buildPhases = (
+				721902A38B853EDFD3BEFB89 /* [CP] Check Pods Manifest.lock */,
 				ADE17F1F2981EC61002B647D /* Sources */,
 				ADE17F202981EC61002B647D /* Frameworks */,
 				ADE17F212981EC61002B647D /* Resources */,
@@ -177,9 +231,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ADE17F3D2981EC62002B647D /* Build configuration list for PBXNativeTarget "sigmap-iosUITests" */;
 			buildPhases = (
+				5B9CC92A52E8C657A10CF897 /* [CP] Check Pods Manifest.lock */,
 				ADE17F292981EC62002B647D /* Sources */,
 				ADE17F2A2981EC62002B647D /* Frameworks */,
 				ADE17F2B2981EC62002B647D /* Resources */,
+				CB040F72F108AA6CDCA4AAB2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -241,6 +297,7 @@
 			files = (
 				ADE17F1E2981EC61002B647D /* Preview Assets.xcassets in Resources */,
 				ADE17F1B2981EC61002B647D /* Assets.xcassets in Resources */,
+				ADB5E5592988B50D00C12F1E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +317,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		007AC3F016D5FC4E51BD4C1F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sigmap-ios/Pods-sigmap-ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sigmap-ios/Pods-sigmap-ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sigmap-ios/Pods-sigmap-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A39A91AD39B621F93F64B81 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sigmap-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B9CC92A52E8C657A10CF897 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sigmap-ios-sigmap-iosUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		721902A38B853EDFD3BEFB89 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sigmap-iosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB040F72F108AA6CDCA4AAB2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sigmap-ios-sigmap-iosUITests/Pods-sigmap-ios-sigmap-iosUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sigmap-ios-sigmap-iosUITests/Pods-sigmap-ios-sigmap-iosUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sigmap-ios-sigmap-iosUITests/Pods-sigmap-ios-sigmap-iosUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ADE17F0F2981EC5F002B647D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -267,7 +427,7 @@
 			files = (
 				AD7131532987034A0068FC1F /* LibraryView.swift in Sources */,
 				AD713151298702330068FC1F /* SettingsView.swift in Sources */,
-				ADE17F192981EC5F002B647D /* ContentView.swift in Sources */,
+				ADE17F192981EC5F002B647D /* HomeView.swift in Sources */,
 				ADE17F172981EC5F002B647D /* sigmap_iosApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,12 +581,14 @@
 		};
 		ADE17F382981EC62002B647D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6949BF32C43D0A7F6E85802 /* Pods-sigmap-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"sigmap-ios/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "sigmap-ios/Info.plist";
@@ -449,12 +611,14 @@
 		};
 		ADE17F392981EC62002B647D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32C5006F018878695A7B9DBF /* Pods-sigmap-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"sigmap-ios/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "sigmap-ios/Info.plist";
@@ -477,6 +641,7 @@
 		};
 		ADE17F3B2981EC62002B647D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EDBB0178A1B75794C15281D /* Pods-sigmap-iosTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -496,6 +661,7 @@
 		};
 		ADE17F3C2981EC62002B647D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B5D1EC072AD671AE3950B6E /* Pods-sigmap-iosTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +681,7 @@
 		};
 		ADE17F3E2981EC62002B647D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 542F057C884D3F0CBA63E4D7 /* Pods-sigmap-ios-sigmap-iosUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +699,7 @@
 		};
 		ADE17F3F2981EC62002B647D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 151474556AEAC5E4D3C9D21A /* Pods-sigmap-ios-sigmap-iosUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
