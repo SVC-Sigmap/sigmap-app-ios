@@ -20,7 +20,7 @@ struct HomeView: View {
                 Text("Start Scan")
                     .padding()
                     .font(.custom("Helvetica Neue", size: 33))
-                    .fontWeight(.medium)
+                    //.fontWeight(.medium)
                     .background(
                         Circle()
                             .frame(width: 220, height: 220)
@@ -45,7 +45,7 @@ struct HomeView: View {
                         .foregroundColor(Color("Green"))
                 }
                 .font(.custom("Helvetica Neue", size: 23))
-                .fontWeight(.medium)
+              //  .fontWeight(.medium)
                 .offset(y: 125)
                 .background(
                     RoundedRectangle(cornerSize: .init(width: 20, height: 20))
@@ -58,7 +58,7 @@ struct HomeView: View {
                     .overlay(.white)
                     .frame(width: 500, height: 630, alignment: .bottom)
                 
-                // navbar
+                // navbxdear
                 HStack(spacing: 60) {
                     NavigationLink(destination: SettingsView())
                     {

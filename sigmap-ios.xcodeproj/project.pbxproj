@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		160BDC9D29883D03007C6E91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160BDC9C29883D03007C6E91 /* ContentView.swift */; };
 		AD713151298702330068FC1F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD713150298702330068FC1F /* SettingsView.swift */; };
 		AD7131532987034A0068FC1F /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7131522987034A0068FC1F /* LibraryView.swift */; };
 		ADE17F172981EC5F002B647D /* sigmap_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE17F162981EC5F002B647D /* sigmap_iosApp.swift */; };
-		ADE17F192981EC5F002B647D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE17F182981EC5F002B647D /* ContentView.swift */; };
 		ADE17F1B2981EC61002B647D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE17F1A2981EC61002B647D /* Assets.xcassets */; };
 		ADE17F1E2981EC61002B647D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE17F1D2981EC61002B647D /* Preview Assets.xcassets */; };
 		ADE17F282981EC61002B647D /* sigmap_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE17F272981EC61002B647D /* sigmap_iosTests.swift */; };
@@ -36,12 +36,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		160BDC9C29883D03007C6E91 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AD713150298702330068FC1F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		AD7131522987034A0068FC1F /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		AD7131542987266D0068FC1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		ADE17F132981EC5F002B647D /* sigmap-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sigmap-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADE17F162981EC5F002B647D /* sigmap_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sigmap_iosApp.swift; sourceTree = "<group>"; };
-		ADE17F182981EC5F002B647D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ADE17F1A2981EC61002B647D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADE17F1D2981EC61002B647D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ADE17F232981EC61002B647D /* sigmap-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sigmap-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,7 +101,7 @@
 			children = (
 				AD7131542987266D0068FC1F /* Info.plist */,
 				ADE17F162981EC5F002B647D /* sigmap_iosApp.swift */,
-				ADE17F182981EC5F002B647D /* ContentView.swift */,
+				160BDC9C29883D03007C6E91 /* ContentView.swift */,
 				AD713150298702330068FC1F /* SettingsView.swift */,
 				AD7131522987034A0068FC1F /* LibraryView.swift */,
 				ADE17F1A2981EC61002B647D /* Assets.xcassets */,
@@ -267,7 +267,7 @@
 			files = (
 				AD7131532987034A0068FC1F /* LibraryView.swift in Sources */,
 				AD713151298702330068FC1F /* SettingsView.swift in Sources */,
-				ADE17F192981EC5F002B647D /* ContentView.swift in Sources */,
+				160BDC9D29883D03007C6E91 /* ContentView.swift in Sources */,
 				ADE17F172981EC5F002B647D /* sigmap_iosApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,6 +427,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"sigmap-ios/Preview Content\"";
+				DEVELOPMENT_TEAM = RZD4N9M5V7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "sigmap-ios/Info.plist";
@@ -434,6 +435,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,6 +457,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"sigmap-ios/Preview Content\"";
+				DEVELOPMENT_TEAM = RZD4N9M5V7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "sigmap-ios/Info.plist";
@@ -462,6 +465,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
