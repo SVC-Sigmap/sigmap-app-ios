@@ -55,6 +55,7 @@ struct SettingsView: View {
                     Divider()
                         .overlay(.white)
                         .frame(width: 500, height: 630, alignment: .bottom)
+                    
 
 
                     // navbar
