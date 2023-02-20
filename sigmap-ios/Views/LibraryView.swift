@@ -9,6 +9,9 @@ Summary: This page contains all existing wifi heat maps in a tile view. Maps can
 import SwiftUI
 
 struct LibraryView: View {
+    @State var isEditing: Bool = true
+    @State var alertIsVisible: Bool = false
+
     var body: some View {
         NavigationView {
             ZStack {
@@ -17,8 +20,29 @@ struct LibraryView: View {
                     .ignoresSafeArea()
                 
                 // placeholder text
-                Text("Library")
-                    .foregroundColor(Color.white)
+                Text("WiFi Maps")
+                    .font(.custom("Helvetica Neue", size: 26))
+                    .foregroundColor(.white)
+                    .frame(width:350, height: 725, alignment: .topLeading)
+                
+                Button(action: {
+                    self.isEditing.toggle()
+                }) {
+                    Text(isEditing ? "Select" : "Done")
+                        .font(.custom("Helvetica Neue", size: 26))
+                        .frame(width:350, height: 725, alignment: .topTrailing)
+                }
+                
+                Divider()
+                    .frame(height: 1)
+                    .overlay(Color.white)
+                    .frame(width: 500, height: 630, alignment: .top)
+
+                Button("Button") {
+                    self.alertIsVisible = true
+                }
+                    .opacity(isEditing ? 0 : 1 )
+                    .frame(width:350, height: 725, alignment: .center)
                 
                 Divider()
                     .overlay(.white)
