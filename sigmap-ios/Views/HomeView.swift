@@ -1,5 +1,5 @@
 /*+===================================================================
-File: ContentView.swift
+File: HomeView.swift
 
 Summary: Serves as the home page of the Sigmap mobile app. Scans are able to started / stopped from here, and users are able to check the status and battery of their robot.
 
