@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16236B9029A54A1800CE5F1C /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16236B8F29A54A1800CE5F1C /* MapView.swift */; };
 		2E31C64BBFB0E65C821F6D29 /* Pods_sigmap_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2959AA6F1D776DE1A17415CB /* Pods_sigmap_iosTests.framework */; };
 		450540EEEA0E0498D5DDD6B1 /* Pods_sigmap_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F455017D230697E9969387D0 /* Pods_sigmap_ios.framework */; };
 		5B317947A3A0D3990757CC35 /* Pods_sigmap_ios_sigmap_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1DAD16EAE4B07A0FC088466 /* Pods_sigmap_ios_sigmap_iosUITests.framework */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		0EDBB0178A1B75794C15281D /* Pods-sigmap-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sigmap-iosTests.debug.xcconfig"; path = "Target Support Files/Pods-sigmap-iosTests/Pods-sigmap-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		151474556AEAC5E4D3C9D21A /* Pods-sigmap-ios-sigmap-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sigmap-ios-sigmap-iosUITests.release.xcconfig"; path = "Target Support Files/Pods-sigmap-ios-sigmap-iosUITests/Pods-sigmap-ios-sigmap-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		16236B8F29A54A1800CE5F1C /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		2959AA6F1D776DE1A17415CB /* Pods_sigmap_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sigmap_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32C5006F018878695A7B9DBF /* Pods-sigmap-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sigmap-ios.release.xcconfig"; path = "Target Support Files/Pods-sigmap-ios/Pods-sigmap-ios.release.xcconfig"; sourceTree = "<group>"; };
 		4B5D1EC072AD671AE3950B6E /* Pods-sigmap-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sigmap-iosTests.release.xcconfig"; path = "Target Support Files/Pods-sigmap-iosTests/Pods-sigmap-iosTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				AD7131522987034A0068FC1F /* LibraryView.swift */,
 				AD713150298702330068FC1F /* SettingsView.swift */,
 				ADE17F182981EC5F002B647D /* HomeView.swift */,
+				16236B8F29A54A1800CE5F1C /* MapView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -427,6 +430,7 @@
 			files = (
 				AD7131532987034A0068FC1F /* LibraryView.swift in Sources */,
 				AD713151298702330068FC1F /* SettingsView.swift in Sources */,
+				16236B9029A54A1800CE5F1C /* MapView.swift in Sources */,
 				ADE17F192981EC5F002B647D /* HomeView.swift in Sources */,
 				ADE17F172981EC5F002B647D /* sigmap_iosApp.swift in Sources */,
 			);
