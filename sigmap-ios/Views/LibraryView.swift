@@ -58,7 +58,7 @@ struct LibraryView: View {
                             }
                             
                         }
-                    }.padding(.top, 100).padding(.bottom, 100)
+                    }.padding(.top, 110).padding(.bottom, 110)
                 }
                     
                 Divider()
