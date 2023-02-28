@@ -6,7 +6,8 @@ target 'sigmap-ios' do
   use_frameworks!
 
   # Pods for sigmap-ios
-  pod 'Firebase/Firestore'
+  pod 'FirebaseFirestore'
+  pod 'FirebaseAuth'
 
   target 'sigmap-iosTests' do
     inherit! :search_paths

@@ -6,10 +6,12 @@ Summary: Central page to hold all settings options, such as sign out of user acc
 ===================================================================+*/
 
 import SwiftUI
+import FirebaseAuth
 
 struct SettingsView: View {
     
     @State var isOn = false;
+    @State var isLoggedIn: Bool = false
     
     var body: some View {
         HStack {
@@ -31,15 +33,22 @@ struct SettingsView: View {
                     
                     VStack {
                         VStack {
-                            Text("Sign Out")
-                                .font(.custom("Helvetica Neue", size: 22))
-                                .foregroundColor(.white)
-                                .frame(width: 350, alignment: .topLeading)
-                            
-                            Text("example@domain.com")
-                                .font(.custom("Helvetica Neue", size: 18))
-                                .accentColor(.gray)
-                                .frame(width: 350, alignment: .topLeading)
+                            NavigationLink(destination:
+                                LoginView(isLoggedIn: $isLoggedIn)
+                                .navigationBarBackButtonHidden(true)
+                                .navigationBarTitle("")) {
+                                VStack {
+                                    Text("Sign Out")
+                                        .font(.custom("Helvetica Neue", size: 22))
+                                        .foregroundColor(.white)
+                                        .frame(width: 350, alignment: .topLeading)
+
+                                    Text("example@domain.com")
+                                        .font(.custom("Helvetica Neue", size: 18))
+                                        .accentColor(.gray)
+                                        .frame(width: 350, alignment: .bottomLeading)
+                                }
+                            }
                         }
                         .padding(.vertical, 10)
                         
@@ -85,6 +94,8 @@ struct SettingsView: View {
                 }
             }
             .navigationBarBackButtonHidden(true)
+            .navigationBarTitle("")
+            .edgesIgnoringSafeArea(.all)
 
         }
     }

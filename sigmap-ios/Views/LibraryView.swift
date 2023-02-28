@@ -46,7 +46,10 @@ struct LibraryView: View {
                             ForEach(roomNames, id: \.self) { roomName in
                                 HStack{
                                     VStack{
-                                        NavigationLink(destination: MapView(roomName: roomName)){
+                                        NavigationLink(destination: MapView(roomName: roomName)
+                                            .navigationBarBackButtonHidden(true)
+                                            .navigationBarTitle("")
+                                            .edgesIgnoringSafeArea(.all)){
                                             Image(systemName: "square.fill")
                                                 .font(.system(size: 150))
                                                 .foregroundColor(.white)
@@ -88,7 +91,8 @@ struct LibraryView: View {
                 .frame(width: 500, height: 790, alignment: .bottom)
             }
         }
-        .navigationBarBackButtonHidden(true)
+        .navigationBarTitle("")
+        .edgesIgnoringSafeArea(.all)
     }
 }
 

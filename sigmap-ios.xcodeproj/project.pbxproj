@@ -11,6 +11,9 @@
 		2E31C64BBFB0E65C821F6D29 /* Pods_sigmap_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2959AA6F1D776DE1A17415CB /* Pods_sigmap_iosTests.framework */; };
 		450540EEEA0E0498D5DDD6B1 /* Pods_sigmap_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F455017D230697E9969387D0 /* Pods_sigmap_ios.framework */; };
 		5B317947A3A0D3990757CC35 /* Pods_sigmap_ios_sigmap_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1DAD16EAE4B07A0FC088466 /* Pods_sigmap_ios_sigmap_iosUITests.framework */; };
+		AD4A264429AE5494006A4E5B /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A264329AE5494006A4E5B /* SwiftUIView.swift */; };
+		AD4A264629AE54AA006A4E5B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A264529AE54AA006A4E5B /* LoginView.swift */; };
+		AD4A264829AE54DE006A4E5B /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A264729AE54DE006A4E5B /* FirebaseManager.swift */; };
 		AD713151298702330068FC1F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD713150298702330068FC1F /* SettingsView.swift */; };
 		AD7131532987034A0068FC1F /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7131522987034A0068FC1F /* LibraryView.swift */; };
 		ADB5E5592988B50D00C12F1E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADB5E5582988B50D00C12F1E /* GoogleService-Info.plist */; };
@@ -48,6 +51,9 @@
 		32C5006F018878695A7B9DBF /* Pods-sigmap-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sigmap-ios.release.xcconfig"; path = "Target Support Files/Pods-sigmap-ios/Pods-sigmap-ios.release.xcconfig"; sourceTree = "<group>"; };
 		4B5D1EC072AD671AE3950B6E /* Pods-sigmap-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sigmap-iosTests.release.xcconfig"; path = "Target Support Files/Pods-sigmap-iosTests/Pods-sigmap-iosTests.release.xcconfig"; sourceTree = "<group>"; };
 		542F057C884D3F0CBA63E4D7 /* Pods-sigmap-ios-sigmap-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sigmap-ios-sigmap-iosUITests.debug.xcconfig"; path = "Target Support Files/Pods-sigmap-ios-sigmap-iosUITests/Pods-sigmap-ios-sigmap-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AD4A264329AE5494006A4E5B /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		AD4A264529AE54AA006A4E5B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		AD4A264729AE54DE006A4E5B /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		AD713150298702330068FC1F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		AD7131522987034A0068FC1F /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		AD7131542987266D0068FC1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -112,6 +118,8 @@
 				AD713150298702330068FC1F /* SettingsView.swift */,
 				ADE17F182981EC5F002B647D /* HomeView.swift */,
 				16236B8F29A54A1800CE5F1C /* MapView.swift */,
+				AD4A264329AE5494006A4E5B /* SwiftUIView.swift */,
+				AD4A264529AE54AA006A4E5B /* LoginView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -147,6 +155,7 @@
 				AD7131542987266D0068FC1F /* Info.plist */,
 				ADB5E5582988B50D00C12F1E /* GoogleService-Info.plist */,
 				ADE17F1C2981EC61002B647D /* Preview Content */,
+				AD4A264729AE54DE006A4E5B /* FirebaseManager.swift */,
 			);
 			path = "sigmap-ios";
 			sourceTree = "<group>";
@@ -429,7 +438,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD7131532987034A0068FC1F /* LibraryView.swift in Sources */,
+				AD4A264629AE54AA006A4E5B /* LoginView.swift in Sources */,
 				AD713151298702330068FC1F /* SettingsView.swift in Sources */,
+				AD4A264429AE5494006A4E5B /* SwiftUIView.swift in Sources */,
+				AD4A264829AE54DE006A4E5B /* FirebaseManager.swift in Sources */,
 				16236B9029A54A1800CE5F1C /* MapView.swift in Sources */,
 				ADE17F192981EC5F002B647D /* HomeView.swift in Sources */,
 				ADE17F172981EC5F002B647D /* sigmap_iosApp.swift in Sources */,
@@ -592,7 +604,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"sigmap-ios/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 3M7CH2BN82;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "sigmap-ios/Info.plist";
@@ -622,7 +634,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"sigmap-ios/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 3M7CH2BN82;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "sigmap-ios/Info.plist";

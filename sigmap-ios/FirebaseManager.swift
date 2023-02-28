@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import Firebase
+import FirebaseFirestore
 
 class FirestoreManager: ObservableObject {
     @Published var temp: String = ""
