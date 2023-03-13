@@ -1,9 +1,9 @@
-//
-//  NavBar.swift
-//  sigmap-ios
-//
-//  Created by Jack Puschnigg on 2023-03-02.
-//
+/*+===================================================================
+File: NavBar.swift
+
+Summary: Allows for the navigation between views
+
+===================================================================+*/
 
 import SwiftUI
 
@@ -14,7 +14,6 @@ struct NavBar: View {
             SettingsView()
                 .tabItem {
                     Image(systemName: "gearshape.fill")
-                        .imageScale(.large)
                     Text("Settings")
                 }
             .tag(0)
@@ -22,8 +21,6 @@ struct NavBar: View {
             HomeView()
                 .tabItem {
                     Image(systemName: "house.fill")
-                        .resizable()
-                        .font(.system(size: 46))
                     Text("Home")
                 }
             .tag(1)
@@ -31,7 +28,6 @@ struct NavBar: View {
             LibraryView()
                 .tabItem {
                     Image(systemName: "map.fill")
-                        .imageScale(.large)
                     Text("Library")
                 }
             .tag(2)

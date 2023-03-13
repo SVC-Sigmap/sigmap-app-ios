@@ -138,7 +138,7 @@ struct LibraryView: View {
                                 }
                             }
                         }
-                    }.padding(.top, 110).padding(.bottom, 80)
+                    }.padding(.top, 66).padding(.bottom, 60)
                 }
 
                     
@@ -149,7 +149,7 @@ struct LibraryView: View {
                 
                 Divider()
                     .overlay(.white)
-                    .frame(width: 500, height: 630, alignment: .bottom)
+                    .frame(width: 500, height: 650, alignment: .bottom)
             }
         }
         .navigationBarTitle("")

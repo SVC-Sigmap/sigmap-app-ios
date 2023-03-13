@@ -123,7 +123,6 @@ struct HomeView: View {
                 
                     Spacer()
                     
-                    
                     // scan status card
                     VStack {
                         HStack {
@@ -154,7 +153,7 @@ struct HomeView: View {
                 
                 Divider()
                     .overlay(.white)
-                    .frame(width: 500, height: 630, alignment: .bottom)
+                    .frame(width: 500, height: 650, alignment: .bottom)
             }
     }
 }

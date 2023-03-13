@@ -72,7 +72,7 @@ struct SettingsView: View {
                 
                     Divider()
                         .overlay(.white)
-                        .frame(width: 500, height: 630, alignment: .bottom)
+                        .frame(width: 500, height: 650, alignment: .bottom)
                 }
             }
             .navigationBarBackButtonHidden(true)
