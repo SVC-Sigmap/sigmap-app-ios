@@ -138,7 +138,7 @@ struct LibraryView: View {
                                 }
                             }
                         }
-                    }.padding(.top, 100).padding(.bottom, 100)
+                    }.padding(.top, 66).padding(.bottom, 60)
                 }
 
                     
@@ -149,27 +149,11 @@ struct LibraryView: View {
                 
                 Divider()
                     .overlay(.white)
-                    .frame(width: 500, height: 630, alignment: .bottom)
-                
-                // navbar
-                HStack(spacing: 60) {
-                    NavigationLink(destination: SettingsView())
-                    {
-                        Image("SettingsButton")
-                    }
-                    NavigationLink(destination: HomeView())
-                    {
-                        Image("ScanButton")
-                    }
-                    NavigationLink(destination: LibraryView())
-                    {
-                        Image("MapLibraryButtonActive")
-                    }
-                }
-                .frame(width: 500, height: 790, alignment: .bottom)
+                    .frame(width: 500, height: 650, alignment: .bottom)
             }
         }
-        .navigationBarBackButtonHidden(true)
+        .navigationBarTitle("")
+        .edgesIgnoringSafeArea(.all)
     }
 }
 

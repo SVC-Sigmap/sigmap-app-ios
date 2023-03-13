@@ -4,19 +4,26 @@ File: sigmap_iosApp.swift
 ===================================================================+*/
 
 import SwiftUI
-import Firebase
+import FirebaseCore
+import FirebaseAuth
 
 @main
 struct sigmap_iosApp: App {
-    
-  init() {
-    FirebaseApp.configure()
-  }
-    
+    @StateObject var firestoreManager = FirestoreManager()
+    @State var isLoggedIn: Bool = false
+
+    init() {
+        FirebaseApp.configure()
+    }
+
   var body: some Scene {
     WindowGroup {
       NavigationView {
-          HomeView()
+          if !isLoggedIn {
+              LoginView(isLoggedIn: $isLoggedIn)
+          } else {
+              NavBar()
+          }
       }
     }
   }
