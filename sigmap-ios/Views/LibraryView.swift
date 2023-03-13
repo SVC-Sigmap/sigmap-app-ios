@@ -61,7 +61,7 @@ struct LibraryView: View {
                             }
                             
                         }
-                    }.padding(.top, 100).padding(.bottom, 100)
+                    }.padding(.top, 110).padding(.bottom, 80)
                 }
                     
                 Divider()
@@ -72,23 +72,6 @@ struct LibraryView: View {
                 Divider()
                     .overlay(.white)
                     .frame(width: 500, height: 630, alignment: .bottom)
-                
-                // navbar
-                HStack(spacing: 60) {
-                    NavigationLink(destination: SettingsView())
-                    {
-                        Image("SettingsButton")
-                    }
-                    NavigationLink(destination: HomeView())
-                    {
-                        Image("ScanButton")
-                    }
-                    NavigationLink(destination: LibraryView())
-                    {
-                        Image("MapLibraryButtonActive")
-                    }
-                }
-                .frame(width: 500, height: 790, alignment: .bottom)
             }
         }
         .navigationBarTitle("")

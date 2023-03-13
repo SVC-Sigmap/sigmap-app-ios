@@ -22,8 +22,7 @@ struct sigmap_iosApp: App {
           if !isLoggedIn {
               LoginView(isLoggedIn: $isLoggedIn)
           } else {
-              HomeView()
-                  .environmentObject(firestoreManager)
+              NavBar()
           }
       }
     }

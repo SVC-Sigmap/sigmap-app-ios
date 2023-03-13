@@ -73,24 +73,6 @@ struct SettingsView: View {
                     Divider()
                         .overlay(.white)
                         .frame(width: 500, height: 630, alignment: .bottom)
-
-
-                    // navbar
-                    HStack(spacing: 60) {
-                        NavigationLink(destination: SettingsView())
-                        {
-                            Image("SettingsButtonActive")
-                        }
-                        NavigationLink(destination: HomeView())
-                        {
-                            Image("ScanButton")
-                        }
-                        NavigationLink(destination: LibraryView())
-                        {
-                            Image("MapLibraryButton")
-                        }
-                    }
-                    .frame(width: 500, height: 790, alignment: .bottom)
                 }
             }
             .navigationBarBackButtonHidden(true)
