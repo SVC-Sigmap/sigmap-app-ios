@@ -57,10 +57,25 @@ struct LibraryView: View {
                     self.rename = true
                     }
                 .opacity(renameBool ? 1 : 0 )
-                .alert("Rename Heatmap", isPresented: $alertIsVisible,
-                       actions: {
+                .alert("Rename Heatmap", isPresented: $alertIsVisible) {
                     TextField("TextField", text: $testName)
-                })
+                        .textInputAutocapitalization(.never)
+                    Button("Rename") {
+                        var j = 0
+                        while j < roomNames.count {
+                            if roomNames[j] == tempName {
+                                roomNames.remove(at: j)
+                                roomNames.insert(testName, at: j)
+                            }
+                            else {
+                                j += 1
+                            }
+                        }
+                        self.editingMap.toggle()
+                        self.isEditing.toggle()
+                    }
+                    Button("Cancel", role: .cancel, action: {})
+                }
                 .font(.custom("Helvetica Neue", size: 26))
                 .frame(width:350, height: 725, alignment: .topLeading)
                 
@@ -74,6 +89,9 @@ struct LibraryView: View {
                                 i += 1
                             }
                         }
+                    self.renameBool.toggle()
+                    self.editingMap.toggle()
+                    self.isEditing.toggle()
                     }
                 .opacity(renameBool ? 1 : 0 )
                 .font(.custom("Helvetica Neue", size: 26))
@@ -100,27 +118,6 @@ struct LibraryView: View {
                                                 self.renameBool.toggle()
                                                 self.editingMap = true
                                                 tempName = roomName
-                                                
-                                                //print("Room Count: \(roomNames.count)")
-                                                
-                                                var i = 0
-                                                //print("Rename: \(rename)")
-                                                if rename == true {
-                                                    print("Rename if true: \(rename)")
-                                                    while i < roomNames.count {
-                                                        //print("roomNames[i]: \(roomNames[i])")
-                                                        //print("tempName: \(tempName)")
-                                                        //print("testName: \(testName)")
-                                                        if roomNames[i] == tempName {
-                                                            roomNames[i] = testName
-                                                            //print(roomNames[i])
-                                                        }
-                                                        else {
-                                                            i += 1
-                                                        }
-                                                    }
-                                                }
-
                                             }) {
                                                 Image(systemName: "circle")
                                                     .font(.system(size: 10))
