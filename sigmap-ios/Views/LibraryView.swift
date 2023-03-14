@@ -48,7 +48,7 @@ struct LibraryView: View {
                     Text(isEditing ? "Select" : "Done")
                         .font(.custom("Helvetica Neue", size: 26))
                         .frame(width:350, height: 725, alignment: .topTrailing)
-                }
+                }.accessibilityLabel("selectButton")
 
                 Button("Rename") {
                     self.alertIsVisible = true

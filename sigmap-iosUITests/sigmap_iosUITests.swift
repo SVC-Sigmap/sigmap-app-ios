@@ -119,4 +119,112 @@ final class sigmap_iosUITests: XCTestCase {
         
         XCTAssertTrue(app.switches["settingsToggle"].isEnabled)
     }
+    
+    //library tests
+    func testSelectButton() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["isRunningUITests"]
+        app.launch()
+        
+        let timeout = 2.0
+        
+        let emailInputField = app.textFields["loginEmail"]
+        let passwordInputField = app.secureTextFields["loginPassword"]
+        let loginButton = app.buttons["loginButton"]
+        
+        XCTAssertTrue(emailInputField.waitForExistence(timeout: timeout))
+        XCTAssertTrue(passwordInputField.waitForExistence(timeout: timeout))
+        XCTAssertTrue(loginButton.waitForExistence(timeout: timeout))
+        
+        emailInputField.tap()
+        emailInputField.typeText("Test@test.com")
+        
+        passwordInputField.tap()
+        passwordInputField.typeText("password")
+        
+        XCTAssertTrue(loginButton.waitForExistence(timeout: timeout))
+        loginButton.tap()
+        XCTAssertTrue(loginButton.isEnabled)
+        
+        app.tabBars["Tab Bar"].buttons["Library"].tap()
+        
+        let selectButton = app.buttons["selectButton"]
+        XCTAssertTrue(selectButton.waitForExistence(timeout: timeout))
+        
+        selectButton.forceTapElement()
+        XCTAssertTrue(selectButton.isEnabled)
+    }
+    
+    func testMapPreview() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["isRunningUITests"]
+        app.launch()
+        
+        let timeout = 2.0
+        
+        let emailInputField = app.textFields["loginEmail"]
+        let passwordInputField = app.secureTextFields["loginPassword"]
+        let loginButton = app.buttons["loginButton"]
+        
+        XCTAssertTrue(emailInputField.waitForExistence(timeout: timeout))
+        XCTAssertTrue(passwordInputField.waitForExistence(timeout: timeout))
+        XCTAssertTrue(loginButton.waitForExistence(timeout: timeout))
+        
+        emailInputField.tap()
+        emailInputField.typeText("Test@test.com")
+        
+        passwordInputField.tap()
+        passwordInputField.typeText("password")
+        
+        XCTAssertTrue(loginButton.waitForExistence(timeout: timeout))
+        loginButton.tap()
+        XCTAssertTrue(loginButton.isEnabled)
+        
+        app.tabBars["Tab Bar"].buttons["Library"].tap()
+        
+        XCUIApplication()/*@START_MENU_TOKEN@*/.scrollViews/*[[".otherElements[\"libraryNavButton\"].scrollViews",".scrollViews"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.children(matching: .other).element(boundBy: 0).children(matching: .other).element.children(matching: .button).matching(identifier: "Square").element(boundBy: 0).tap()
+    }
+    
+    func testMapFullView() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["isRunningUITests"]
+        app.launch()
+
+        let timeout = 2.0
+
+        let emailInputField = app.textFields["loginEmail"]
+        let passwordInputField = app.secureTextFields["loginPassword"]
+        let loginButton = app.buttons["loginButton"]
+        
+        XCTAssertTrue(emailInputField.waitForExistence(timeout: timeout))
+        XCTAssertTrue(passwordInputField.waitForExistence(timeout: timeout))
+        XCTAssertTrue(loginButton.waitForExistence(timeout: timeout))
+
+        emailInputField.tap()
+        emailInputField.typeText("Test@test.com")
+
+        passwordInputField.tap()
+        passwordInputField.typeText("password")
+        
+        XCTAssertTrue(loginButton.waitForExistence(timeout: timeout))
+        loginButton.tap()
+        XCTAssertTrue(loginButton.isEnabled)
+        
+        app.tabBars["Tab Bar"].buttons["Library"].tap()
+        
+        XCUIApplication()/*@START_MENU_TOKEN@*/.scrollViews/*[[".otherElements[\"libraryNavButton\"].scrollViews",".scrollViews"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.children(matching: .other).element(boundBy: 0).children(matching: .other).element.children(matching: .button).matching(identifier: "Square").element(boundBy: 0).tap()
+        XCUIApplication()/*@START_MENU_TOKEN@*/.navigationBars["_TtGC7SwiftUI19UIHosting"]/*[[".otherElements[\"libraryNavButton\"].navigationBars[\"_TtGC7SwiftUI19UIHosting\"]",".navigationBars[\"_TtGC7SwiftUI19UIHosting\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.buttons["Back"].tap()
+    }
+}
+
+extension XCUIElement {
+    func forceTapElement() {
+        if self.isHittable {
+            self.tap()
+        }
+        else {
+            let coordinate: XCUICoordinate = self.coordinate(withNormalizedOffset: CGVector(dx:0.0, dy:0.0))
+            coordinate.tap()
+        }
+    }
 }
