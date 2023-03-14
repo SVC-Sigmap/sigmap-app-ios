@@ -120,6 +120,7 @@ struct HomeView: View {
                                     .foregroundColor(Color.green)
                             )
                     }
+                    .accessibilityLabel("startScanButton")
                 
                     Spacer()
                     

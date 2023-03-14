@@ -28,12 +28,14 @@ struct LoginView: View {
                     .frame(width: 100, height: 100)
                     .padding([.bottom], 30)
                 TextField("   Email", text: $email)
+                    .accessibilityLabel("loginEmail")
                     .foregroundColor(Color.black)
                     .frame(width: 300, height: 30)
                     .background(RoundedRectangle(cornerRadius: 4)
                         .fill(Color.white))
                         .padding([.bottom], 15)
                 SecureField("   Password", text: $password)
+                    .accessibilityLabel("loginPassword")
                     .foregroundColor(Color.black)
                     .frame(width: 300, height: 30)
                     .background(RoundedRectangle(cornerRadius: 4)
@@ -48,6 +50,7 @@ struct LoginView: View {
                                 .frame(width: 100, height: 40)
                         )
                 }
+                .accessibilityLabel("loginButton")
                 .padding([.top], 15)
                 Spacer()
             }
