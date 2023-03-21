@@ -25,9 +25,20 @@ struct MapView: View {
                 .overlay(Color.white)
                 .frame(width: 500, height: 630, alignment: .top)
             
-            Image(roomName)
-                .resizable(resizingMode: .stretch)
-                .frame(width: 320.0, height: 600.0, alignment: .bottom)
+            VStack{
+                Text("Min: ")
+                    .font(.custom("Helvetica Neue", size: 22))
+                    .foregroundColor(.white)
+                    .frame(width: 350, alignment: .topLeading)
+                Text("Max: ")
+                    .font(.custom("Helvetica Neue", size: 22))
+                    .foregroundColor(.white)
+                    .frame(width: 350, alignment: .topLeading)
+                Text("Average: ")
+                    .font(.custom("Helvetica Neue", size: 22))
+                    .foregroundColor(.white)
+                    .frame(width: 350, alignment: .topLeading)
+            }
         }
     }
 }
