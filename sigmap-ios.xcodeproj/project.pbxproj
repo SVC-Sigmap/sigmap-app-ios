@@ -438,11 +438,7 @@
 				AD4A264629AE54AA006A4E5B /* LoginView.swift in Sources */,
 				AD4A264A29B136D4006A4E5B /* NavBar.swift in Sources */,
 				AD713151298702330068FC1F /* SettingsView.swift in Sources */,
-<<<<<<< HEAD
 				AD4A264429AE5494006A4E5B /* SwiftUIView.swift in Sources */,
-=======
-				AD4A264829AE54DE006A4E5B /* FirebaseManager.swift in Sources */,
->>>>>>> eab3c7b28be3bdb07aef00ddc3a1d5ba436900ec
 				16236B9029A54A1800CE5F1C /* MapView.swift in Sources */,
 				ADE17F192981EC5F002B647D /* HomeView.swift in Sources */,
 				ADE17F172981EC5F002B647D /* sigmap_iosApp.swift in Sources */,
