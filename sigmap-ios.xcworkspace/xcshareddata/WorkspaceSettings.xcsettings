@@ -2,7 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-<<<<<<< HEAD:sigmap-ios.xcodeproj/xcuserdata/jacob.visalli.xcuserdatad/xcschemes/xcschememanagement.plist
 	<key>SchemeUserState</key>
 	<dict>
 		<key>sigmap-ios.xcscheme_^#shared#^_</key>
@@ -11,9 +10,5 @@
 			<integer>10</integer>
 		</dict>
 	</dict>
-=======
-	<key>IDEWorkspaceSharedSettings_AutocreateContextsIfNeeded</key>
-	<true/>
->>>>>>> main:sigmap-ios.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
 </dict>
 </plist>
