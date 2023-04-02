@@ -9,9 +9,7 @@ import SwiftUI
 import Foundation
 import FirebaseAuth
 
-struct HomeView: View {
-    @EnvironmentObject var firestoreManager: FirestoreManager
-    
+struct HomeView: View {    
     @State var BatteryLevel: Int = 0
     @State var ConnectionStatus: String = ""
     @State var ScanReadiness: Bool = false
@@ -163,6 +161,5 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
-            .environmentObject(FirestoreManager())
     }
 }

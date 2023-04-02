@@ -7,15 +7,18 @@ Summary: This page contains all existing wifi heat maps in a tile view. Maps can
 
 
 import SwiftUI
+import FirebaseFirestore
 
 struct LibraryView: View {
     @State var isEditing: Bool = true
     @State var alertIsVisible: Bool = false
     @State var renameBool: Bool = false
     @State var rename: Bool = false
-    @State var roomNames = ["room 1", "room 2", "room 3", "room 4", "room 5", "room 6", "room 7", "room 8", "room 9", "room a", "room b", "room c", "room d"]
+//    @State var roomNames = ["room 1", "room 2", "room 3", "room 4", "room 5", "room 6", "room 7", "room 8", "room 9", "room a", "room b", "room c", "room d"]
     @State var tempName = ""
     @State var testName = ""
+    
+    @State var roomNames: [String] = []
     
     @State var currentlyEditing: Bool = false
 
@@ -25,6 +28,10 @@ struct LibraryView: View {
                 // background color
                 Color(UIColor(red: 30/255, green: 30/255, blue: 30/255, alpha: 1))
                     .ignoresSafeArea()
+                
+                    .onAppear {
+                        fetchAllScans()
+                    }
                 
                 if !currentlyEditing {
                     Text("WiFi Library")
@@ -160,6 +167,23 @@ struct LibraryView: View {
         }
         .navigationBarTitle("")
         .edgesIgnoringSafeArea(.all)
+    }
+    
+    func fetchAllScans() {
+        let db = Firestore.firestore()
+        
+        roomNames = []
+
+        db.collection("Test@test.com").getDocuments() { (querySnapshot, error) in
+            if let error = error {
+                print("Error getting documents: \(error)")
+            } else {
+                for document in querySnapshot!.documents {
+                    print(document.documentID)
+                    roomNames.append(document.documentID)
+                }
+            }
+        }
     }
 }
 
