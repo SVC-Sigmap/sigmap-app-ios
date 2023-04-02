@@ -28,12 +28,12 @@ struct MapView: View {
             Text(roomName)
                 .font(.custom("Helvetica Neue", size: 26))
                 .foregroundColor(.white)
-                .frame(width:350, height: 725, alignment: .topLeading)
+                .frame(width:350, height: 670, alignment: .topLeading)
             
             Divider()
                 .frame(height: 1)
                 .overlay(Color.white)
-                .frame(width: 500, height: 630, alignment: .top)
+                .frame(width: 500, height: 600, alignment: .top)
             
             VStack{
                 Text("Min: " + String(scanMin))
@@ -71,7 +71,6 @@ struct MapView: View {
                     scanAverage = data["Average"] as! Int
                 }
             }
-
         }
     }
 }
