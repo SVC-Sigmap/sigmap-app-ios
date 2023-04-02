@@ -36,7 +36,9 @@ struct SettingsView: View {
                             NavigationLink(destination:
                                 LoginView(isLoggedIn: $isLoggedIn)
                                 .navigationBarBackButtonHidden(true)
-                                .navigationBarTitle("")) {
+                                .navigationBarTitle("")
+                                .accessibilityLabel("signOutButton"))
+                            {
                                 VStack {
                                     Text("Sign Out")
                                         .font(.custom("Helvetica Neue", size: 22))
@@ -66,6 +68,7 @@ struct SettingsView: View {
                             }
                             Toggle("", isOn: $isOn)
                                 .frame(width: 70)
+                                .accessibilityLabel("settingsToggle")
                         }
                     }
                     .frame(width: 395, height: 600, alignment: .top)

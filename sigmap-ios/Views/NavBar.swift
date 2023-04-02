@@ -16,6 +16,7 @@ struct NavBar: View {
                     Image(systemName: "gearshape.fill")
                     Text("Settings")
                 }
+                .accessibilityLabel("settingsNavButton")
             .tag(0)
             
             HomeView()
