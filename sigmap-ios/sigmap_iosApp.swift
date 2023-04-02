@@ -9,7 +9,6 @@ import FirebaseAuth
 
 @main
 struct sigmap_iosApp: App {
-    @StateObject var firestoreManager = FirestoreManager()
     @State var isLoggedIn: Bool = false
 
     init() {
