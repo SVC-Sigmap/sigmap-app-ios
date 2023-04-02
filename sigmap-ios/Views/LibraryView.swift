@@ -7,24 +7,20 @@ Summary: This page contains all existing wifi heat maps in a tile view. Maps can
 
 
 import SwiftUI
+import FirebaseFirestore
 
 struct LibraryView: View {
     @State var isEditing: Bool = true
     @State var alertIsVisible: Bool = false
-    @State var editingMap: Bool = false
     @State var renameBool: Bool = false
     @State var rename: Bool = false
-    @State var roomNames = ["room 1", "room 2", "room 3", "room 4", "room 5", "room 6", "room 7"]
+//    @State var roomNames = ["room 1", "room 2", "room 3", "room 4", "room 5", "room 6", "room 7", "room 8", "room 9", "room a", "room b", "room c", "room d"]
     @State var tempName = ""
     @State var testName = ""
     
-    private var columns = Array(repeating: GridItem(.flexible(), spacing: -100), count: 2)
+    @State var roomNames: [String] = []
     
-    init() {
-            UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.white]
-
-            UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.white]
-        }
+    @State var currentlyEditing: Bool = false
 
     var body: some View {
         NavigationView {
@@ -33,8 +29,12 @@ struct LibraryView: View {
                 Color(UIColor(red: 30/255, green: 30/255, blue: 30/255, alpha: 1))
                     .ignoresSafeArea()
                 
-                if !editingMap {
-                    Text("WiFi Maps")
+                    .onAppear {
+                        fetchAllScans()
+                    }
+                
+                if !currentlyEditing {
+                    Text("WiFi Library")
                         .font(.custom("Helvetica Neue", size: 26))
                         .foregroundColor(.white)
                         .frame(width:350, height: 725, alignment: .topLeading)
@@ -42,107 +42,119 @@ struct LibraryView: View {
                 
                 Button(action: {
                     self.isEditing.toggle()
-                    self.editingMap = false
+                    self.currentlyEditing = false
                     self.renameBool = false
                 }) {
                     Text(isEditing ? "Select" : "Done")
                         .font(.custom("Helvetica Neue", size: 26))
+                        .foregroundColor(.blue)
                         .frame(width:350, height: 725, alignment: .topTrailing)
                 }
-
+                
                 Button("Rename") {
                     self.alertIsVisible = true
-                    self.editingMap = true
+                    self.currentlyEditing = true
                     self.renameBool = false
                     self.rename = true
-                    }
+                }
                 .opacity(renameBool ? 1 : 0 )
-                .alert("Rename Heatmap", isPresented: $alertIsVisible,
-                       actions: {
+                .alert("Rename Heatmap", isPresented: $alertIsVisible) {
                     TextField("TextField", text: $testName)
-                })
-                .font(.custom("Helvetica Neue", size: 26))
-                .frame(width:350, height: 725, alignment: .topLeading)
+                        .textInputAutocapitalization(.never)
+                   Button("Rename") {
+                       var j = 0
+                       while j < roomNames.count {
+                           if roomNames[j] == tempName {
+                               roomNames.remove(at: j)
+                               roomNames.insert(testName, at: j)
+                           }
+                           else {
+                               j += 1
+                           }
+                       }
+                       self.currentlyEditing.toggle()
+                       self.isEditing.toggle()
+                   }
+                   Button("Cancel", role: .cancel, action: {})
+               }
+               .font(.custom("Helvetica Neue", size: 26))
+               .foregroundColor(.blue)
+               .frame(width:350, height: 725, alignment: .topLeading)
                 
                 Button("Delete") {
                     var i = 0
-                        while i < roomNames.count {
-                            if roomNames[i] == tempName {
-                                roomNames.remove(at: i)
-                            }
-                            else {
-                                i += 1
-                            }
+                    while i < roomNames.count {
+                        if roomNames[i] == tempName {
+                            roomNames.remove(at: i)
                         }
+                        else {
+                            i += 1
+                        }
+                    }
+                    self.renameBool.toggle()
+                    self.currentlyEditing.toggle()
+                    self.isEditing.toggle()
                     }
                 .opacity(renameBool ? 1 : 0 )
                 .font(.custom("Helvetica Neue", size: 26))
                 .foregroundColor(.red)
                 .frame(width:350, height: 725, alignment: .top)
                 
-                VStack (spacing: 10) {
-                    ScrollView(){
-                        LazyVGrid(columns: columns) {
+                VStack {
+                    ScrollView {
+                        VStack {
                             ForEach(roomNames, id: \.self) { roomName in
-                                HStack{
-                                    VStack{
-                                        if isEditing {
-                                            NavigationLink(destination: MapView(roomName: roomName)){
-                                                Image(systemName: "square.fill")
-                                                    .font(.system(size: 150))
-                                                    .foregroundColor(.white)
-                                            }
+                                if isEditing {
+                                    NavigationLink(destination: MapView(roomName: roomName)){
+                                        VStack {
                                             Text(roomName)
-                                                .foregroundColor(Color.white)
+                                                .font(.custom("Helvetica Neue", size: 50))
+                                                .foregroundColor(.white)
+                                                .frame(width: 350, alignment: .topLeading)
                                         }
-                                        else {
+                                    }
+                                }
+                                else {
+                                    VStack {
+                                        HStack{
+                                            Text(roomName)
+                                                .font(.custom("Helvetica Neue", size: 50))
+                                                .foregroundColor(.white)
+                                                .frame(width: 322, alignment: .topLeading)
+                                            
                                             Button(action: {
-                                                self.renameBool.toggle()
-                                                self.editingMap = true
+                                                self.currentlyEditing = true
+                                                self.renameBool = true
                                                 tempName = roomName
-                                                
-                                                //print("Room Count: \(roomNames.count)")
-                                                
-                                                var i = 0
-                                                //print("Rename: \(rename)")
-                                                if rename == true {
-                                                    print("Rename if true: \(rename)")
-                                                    while i < roomNames.count {
-                                                        //print("roomNames[i]: \(roomNames[i])")
-                                                        //print("tempName: \(tempName)")
-                                                        //print("testName: \(testName)")
-                                                        if roomNames[i] == tempName {
-                                                            roomNames[i] = testName
-                                                            //print(roomNames[i])
-                                                        }
-                                                        else {
-                                                            i += 1
-                                                        }
+                                            }) {
+                                                    if !currentlyEditing {
+                                                    Image(systemName: "circle")
+                                                        .foregroundColor(.blue)
+                                                        .frame(alignment: .topLeading)
+                                                    }
+                                                    else {
+                                                    if tempName == roomName {
+                                                        Image(systemName: "circle.fill")
+                                                            .foregroundColor(.blue)
+                                                            .frame(alignment: .topLeading)
+                                                    }
+                                                    else {
+                                                        Image(systemName: "circle")
+                                                            .foregroundColor(.blue)
+                                                            .frame(alignment: .topLeading)
                                                     }
                                                 }
-
-                                            }) {
-                                                Image(systemName: "circle")
-                                                    .font(.system(size: 10))
-                                                    .foregroundColor(.blue)
-                                                    .padding(60)
                                             }
-                                            .background(
-                                                Image(systemName: "square.fill")
-                                                    .font(.system(size: 150))
-                                                    .foregroundColor(.white))
-                                            Text(roomName)
-                                                .foregroundColor(Color.white)
                                         }
                                     }
                                 }
                             }
                         }
+                        .padding(.vertical, 10)
                     }
-                    .padding(.top, 67).padding(.bottom, 56)
                 }
+                .frame(width: 395, height: 600, alignment: .top)
 
-                    
                 Divider()
                     .frame(height: 1)
                     .overlay(Color.white)
@@ -155,6 +167,23 @@ struct LibraryView: View {
         }
         .navigationBarTitle("")
         .edgesIgnoringSafeArea(.all)
+    }
+    
+    func fetchAllScans() {
+        let db = Firestore.firestore()
+        
+        roomNames = []
+
+        db.collection("Test@test.com").getDocuments() { (querySnapshot, error) in
+            if let error = error {
+                print("Error getting documents: \(error)")
+            } else {
+                for document in querySnapshot!.documents {
+                    print(document.documentID)
+                    roomNames.append(document.documentID)
+                }
+            }
+        }
     }
 }
 
