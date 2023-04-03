@@ -33,72 +33,12 @@ struct LibraryView: View {
                         fetchAllScans()
                     }
                 
-                if !currentlyEditing {
-                    Text("WiFi Library")
-                        .font(.custom("Helvetica Neue", size: 26))
-                        .foregroundColor(.white)
-                        .frame(width:350, height: 725, alignment: .topLeading)
-                }
-                
-                Button(action: {
-                    self.isEditing.toggle()
-                    self.currentlyEditing = false
-                    self.renameBool = false
-                }) {
-                    Text(isEditing ? "Select" : "Done")
-                        .font(.custom("Helvetica Neue", size: 26))
-                        .foregroundColor(.blue)
-                        .frame(width:350, height: 725, alignment: .topTrailing)
-                }
-                
-                Button("Rename") {
-                    self.alertIsVisible = true
-                    self.currentlyEditing = true
-                    self.renameBool = false
-                    self.rename = true
-                }
-                .opacity(renameBool ? 1 : 0 )
-                .alert("Rename Heatmap", isPresented: $alertIsVisible) {
-                    TextField("TextField", text: $testName)
-                        .textInputAutocapitalization(.never)
-                   Button("Rename") {
-                       var j = 0
-                       while j < roomNames.count {
-                           if roomNames[j] == tempName {
-                               roomNames.remove(at: j)
-                               roomNames.insert(testName, at: j)
-                           }
-                           else {
-                               j += 1
-                           }
-                       }
-                       self.currentlyEditing.toggle()
-                       self.isEditing.toggle()
-                   }
-                   Button("Cancel", role: .cancel, action: {})
-               }
-               .font(.custom("Helvetica Neue", size: 26))
-               .foregroundColor(.blue)
-               .frame(width:350, height: 725, alignment: .topLeading)
-                
-                Button("Delete") {
-                    var i = 0
-                    while i < roomNames.count {
-                        if roomNames[i] == tempName {
-                            roomNames.remove(at: i)
-                        }
-                        else {
-                            i += 1
-                        }
-                    }
-                    self.renameBool.toggle()
-                    self.currentlyEditing.toggle()
-                    self.isEditing.toggle()
-                    }
-                .opacity(renameBool ? 1 : 0 )
-                .font(.custom("Helvetica Neue", size: 26))
-                .foregroundColor(.red)
-                .frame(width:350, height: 725, alignment: .top)
+                Text("WiFi Library")
+                    .font(.custom("Helvetica Neue", size: 30))
+                    .foregroundColor(.white)
+                    .frame(width:350, height: 725, alignment: .top)
+                    .offset(y: 10)
+                    .offset(x: -10)
                 
                 VStack {
                     ScrollView {
@@ -107,10 +47,22 @@ struct LibraryView: View {
                                 if isEditing {
                                     NavigationLink(destination: MapView(roomName: roomName)){
                                         VStack {
-                                            Text(roomName)
-                                                .font(.custom("Helvetica Neue", size: 50))
-                                                .foregroundColor(.white)
-                                                .frame(width: 350, alignment: .topLeading)
+                                            HStack {
+                                                Text(roomName)
+                                                    .font(.custom("Helvetica Neue", size: 30))
+                                                    .foregroundColor(.white)
+                                                    .frame(width: 350, alignment: .topLeading)
+                                                
+                                                Image(systemName: "chevron.right")
+                                                    .resizable()
+                                                    .frame(width: 10, height: 20)
+                                                    .font(Font.system(.footnote).weight(.semibold))
+                                                    .foregroundColor(.white)
+                                            }
+                                            .padding(-1)
+                                            Divider()
+                                                .overlay(.white)
+                                            
                                         }
                                     }
                                 }
@@ -159,6 +111,7 @@ struct LibraryView: View {
                     .frame(height: 1)
                     .overlay(Color.white)
                     .frame(width: 500, height: 630, alignment: .top)
+                    .padding(.bottom, -20)
                 
                 Divider()
                     .overlay(.white)

@@ -26,29 +26,42 @@ struct MapView: View {
                 }
             
             Text(roomName)
-                .font(.custom("Helvetica Neue", size: 26))
+                .font(.custom("Helvetica Neue", size: 30))
                 .foregroundColor(.white)
-                .frame(width:350, height: 670, alignment: .topLeading)
+                .frame(width:350, height: 670, alignment: .top)
             
             Divider()
                 .frame(height: 1)
                 .overlay(Color.white)
                 .frame(width: 500, height: 600, alignment: .top)
+                .padding(.top, 30)
             
             VStack{
                 Text("Min: " + String(scanMin))
-                    .font(.custom("Helvetica Neue", size: 22))
+                    .font(.custom("Helvetica Neue", size: 30))
                     .foregroundColor(.white)
-                    .frame(width: 350, alignment: .topLeading)
+                    .frame(width: 350, alignment: .top)
+                    .padding()
                 Text("Average: " + String(scanAverage))
-                    .font(.custom("Helvetica Neue", size: 22))
+                    .font(.custom("Helvetica Neue", size: 30))
                     .foregroundColor(.white)
-                    .frame(width: 350, alignment: .topLeading)
+                    .frame(width: 350, alignment: .top)
+                    .padding()
                 Text("Max: " + String(scanMax))
-                    .font(.custom("Helvetica Neue", size: 22))
+                    .font(.custom("Helvetica Neue", size: 30))
                     .foregroundColor(.white)
-                    .frame(width: 350, alignment: .topLeading)
+                    .frame(width: 350, alignment: .top)
+                    .padding()
             }
+            .background(
+                RoundedRectangle(cornerSize: .init(width: 30, height: 20))
+                    .frame(width: 200, height: 270)
+                    .foregroundColor(Color.gray)
+            )
+            
+            Divider()
+                .overlay(.white)
+                .frame(width: 500, height: 650, alignment: .bottom)
         }
     }
     

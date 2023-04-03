@@ -11,13 +11,13 @@ struct NavBar: View {
     @State private var selection = 1
     var body: some View {
         TabView(selection: $selection) {
-            SettingsView()
-                .tabItem {
-                    Image(systemName: "gearshape.fill")
-                    Text("Settings")
-                }
-                .accessibilityLabel("settingsNavButton")
-            .tag(0)
+//            SettingsView()
+//                .tabItem {
+//                    Image(systemName: "gearshape.fill")
+//                    Text("Settings")
+//                }
+//                .accessibilityLabel("settingsNavButton")
+//            .tag(0)
             
             HomeView()
                 .tabItem {
@@ -28,7 +28,7 @@ struct NavBar: View {
             
             LibraryView()
                 .tabItem {
-                    Image(systemName: "map.fill")
+                    Image(systemName: "list.dash")
                     Text("Library")
                 }
             .tag(2)
