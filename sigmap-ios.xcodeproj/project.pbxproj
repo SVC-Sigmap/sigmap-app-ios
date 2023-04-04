@@ -11,7 +11,6 @@
 		6BA0F555E3A9724F13FEBCBB /* Pods_sigmap_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DE28D9BAD315FC91FF174ED /* Pods_sigmap_iosTests.framework */; };
 		AD4A264629AE54AA006A4E5B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A264529AE54AA006A4E5B /* LoginView.swift */; };
 		AD4A264A29B136D4006A4E5B /* NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A264929B136D4006A4E5B /* NavBar.swift */; };
-		AD713151298702330068FC1F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD713150298702330068FC1F /* SettingsView.swift */; };
 		AD7131532987034A0068FC1F /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7131522987034A0068FC1F /* LibraryView.swift */; };
 		ADB5E5592988B50D00C12F1E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADB5E5582988B50D00C12F1E /* GoogleService-Info.plist */; };
 		ADE17F172981EC5F002B647D /* sigmap_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE17F162981EC5F002B647D /* sigmap_iosApp.swift */; };
@@ -53,7 +52,6 @@
 		A70D623C4A300E7019682A25 /* Pods-sigmap-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sigmap-ios.debug.xcconfig"; path = "Target Support Files/Pods-sigmap-ios/Pods-sigmap-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		AD4A264529AE54AA006A4E5B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		AD4A264929B136D4006A4E5B /* NavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBar.swift; sourceTree = "<group>"; };
-		AD713150298702330068FC1F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		AD7131522987034A0068FC1F /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		AD7131542987266D0068FC1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		ADB5E5582988B50D00C12F1E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -113,7 +111,6 @@
 			isa = PBXGroup;
 			children = (
 				AD7131522987034A0068FC1F /* LibraryView.swift */,
-				AD713150298702330068FC1F /* SettingsView.swift */,
 				ADE17F182981EC5F002B647D /* HomeView.swift */,
 				16236B8F29A54A1800CE5F1C /* MapView.swift */,
 				AD4A264529AE54AA006A4E5B /* LoginView.swift */,
@@ -437,8 +434,6 @@
 				AD7131532987034A0068FC1F /* LibraryView.swift in Sources */,
 				AD4A264629AE54AA006A4E5B /* LoginView.swift in Sources */,
 				AD4A264A29B136D4006A4E5B /* NavBar.swift in Sources */,
-				AD713151298702330068FC1F /* SettingsView.swift in Sources */,
-				AD4A264429AE5494006A4E5B /* SwiftUIView.swift in Sources */,
 				16236B9029A54A1800CE5F1C /* MapView.swift in Sources */,
 				ADE17F192981EC5F002B647D /* HomeView.swift in Sources */,
 				ADE17F172981EC5F002B647D /* sigmap_iosApp.swift in Sources */,

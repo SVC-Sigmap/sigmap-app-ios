@@ -307,10 +307,13 @@ struct HomeView: View {
         if (dataArr.isEmpty) {
             return [0, 0, 0]
         } else {
-            let sum = dataArr.reduce(0, +)
-            let average = Int(Int(sum) / Int(dataArr.count))
-            let minimum = Int(dataArr.min() ?? 0)
-            let maximum = Int(dataArr.max() ?? 0)
+            // Remove all zeros from the array
+            let filteredArr = dataArr.filter({$0 > 0})
+            
+            let sum = filteredArr.reduce(0, +)
+            let average = Int(Int(sum) / Int(filteredArr.count))
+            let minimum = Int(filteredArr.min() ?? 0)
+            let maximum = Int(filteredArr.max() ?? 0)
             
             let returnArr = [average, minimum, maximum]
             
