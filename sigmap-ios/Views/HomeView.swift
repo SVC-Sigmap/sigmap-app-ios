@@ -84,7 +84,7 @@ struct HomeView: View {
                         .padding()
                         .frame(width: 220, height: 220)
                         .contentShape(Circle())
-                        .font(.custom("Helvetica Neue", size: 33))
+                        .font(.system(size: 33))
                         .fontWeight(.medium)
                         .foregroundColor(.black)
                         .background(
@@ -98,7 +98,7 @@ struct HomeView: View {
                         .padding()
                         .frame(width: 220, height: 220)
                         .contentShape(Circle())
-                        .font(.custom("Helvetica Neue", size: 33))
+                        .font(.system(size: 33))
                         .fontWeight(.medium)
                         .foregroundColor(.black)
                         .background(
@@ -142,9 +142,9 @@ struct HomeView: View {
                     // Robot readiness data
                     Text (ScanReadiness == true ? "Ready to Scan" : "Unable to Scan")
                         .padding(5)
-                        .foregroundColor(ScanReadiness == true ? Color.green : Color.red)
+                        .foregroundColor(ScanReadiness == true ? .green : Color(UIColor(red: 210/255, green: 43/255, blue: 43/255, alpha: 1)))
                 }
-                .font(.custom("Helvetica Neue", size: 23))
+                .font(.system(size: 23))
                 .fontWeight(.medium)
                 .background(
                     RoundedRectangle(cornerSize: .init(width: 20, height: 20))
@@ -162,10 +162,10 @@ struct HomeView: View {
         }
         
         // Render scan name input pop-up when scan is stopped
-        .alert("Scan Name", isPresented: $presentAlert, actions: {
+        .alert("Scan Saved", isPresented: $presentAlert, actions: {
             let computedWifiData = computeData(dataArr: wifiData)
             TextField("Scan Name", text: $scanName)
-            Button("Enter", action: {createScan(ScanName: scanName, Average: computedWifiData[0] ?? 0, Min: computedWifiData[1] ?? 0, Max: computedWifiData[2] ?? 0)})
+            Button("Save", action: {createScan(ScanName: scanName, Average: computedWifiData[0] ?? 0, Min: computedWifiData[1] ?? 0, Max: computedWifiData[2] ?? 0)})
             Button("Cancel", role: .cancel, action: {})
         }, message: {
             Text("Please enter the name of the scan")
@@ -283,7 +283,7 @@ struct HomeView: View {
         let db = Firestore.firestore()
         
         // Create a new document called <ScanName> in the active user's collection
-        let docRef = db.collection("Test@test.com").document(ScanName)
+        let docRef = db.collection("user@gmail.com").document(ScanName)
         
         // Scan data object definition
         let docData: [String: Int] = [
@@ -309,15 +309,18 @@ struct HomeView: View {
         } else {
             // Remove all zeros from the array
             let filteredArr = dataArr.filter({$0 > 0})
-            
             let sum = filteredArr.reduce(0, +)
-            let average = Int(Int(sum) / Int(filteredArr.count))
-            let minimum = Int(filteredArr.min() ?? 0)
-            let maximum = Int(filteredArr.max() ?? 0)
             
-            let returnArr = [average, minimum, maximum]
+            if (Int(filteredArr.count) != 0) {
+                let average = Int(Int(sum) / Int(filteredArr.count))
+                let minimum = Int(filteredArr.min() ?? 0)
+                let maximum = Int(filteredArr.max() ?? 0)
+                let returnArr = [average, minimum, maximum]
+                
+                return returnArr
+            }
             
-            return returnArr
+            return [0, 0, 0]
         }
     }
 }

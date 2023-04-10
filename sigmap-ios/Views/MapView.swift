@@ -26,7 +26,7 @@ struct MapView: View {
                 }
             
             Text(roomName)
-                .font(.custom("Helvetica Neue", size: 30))
+                .font(.system(size: 30))
                 .foregroundColor(.white)
                 .frame(width:350, height: 670, alignment: .top)
             
@@ -38,17 +38,17 @@ struct MapView: View {
             
             VStack{
                 Text("Min: " + String(scanMin))
-                    .font(.custom("Helvetica Neue", size: 30))
+                    .font(.system(size: 30))
                     .foregroundColor(.white)
                     .frame(width: 350, alignment: .top)
                     .padding()
                 Text("Average: " + String(scanAverage))
-                    .font(.custom("Helvetica Neue", size: 30))
+                    .font(.system(size: 30))
                     .foregroundColor(.white)
                     .frame(width: 350, alignment: .top)
                     .padding()
                 Text("Max: " + String(scanMax))
-                    .font(.custom("Helvetica Neue", size: 30))
+                    .font(.system(size: 30))
                     .foregroundColor(.white)
                     .frame(width: 350, alignment: .top)
                     .padding()
@@ -61,14 +61,14 @@ struct MapView: View {
             
             Divider()
                 .overlay(.white)
-                .frame(width: 500, height: 650, alignment: .bottom)
+                .frame(width: 500, height: 605, alignment: .bottom)
         }
     }
     
     func fetchScanData() {
         let db = Firestore.firestore()
 
-        let docRef = db.collection("Test@test.com").document(roomName)
+        let docRef = db.collection("user@gmail.com").document(roomName)
         
         docRef.getDocument { (document, error) in
             guard error == nil else {
@@ -90,10 +90,10 @@ struct MapView: View {
 
 struct MapView_Previews: PreviewProvider {
     
-    @State static var roomName: String = "room 1"
+    @State static var roomName: String = "Living room"
     
     static var previews: some View {
-        MapView(roomName: roomName)
+        MapView(roomName: roomName, scanMin: 86, scanMax: 98, scanAverage: 94)
     }
 }
 
