@@ -11,14 +11,6 @@ struct NavBar: View {
     @State private var selection = 1
     var body: some View {
         TabView(selection: $selection) {
-//            SettingsView()
-//                .tabItem {
-//                    Image(systemName: "gearshape.fill")
-//                    Text("Settings")
-//                }
-//                .accessibilityLabel("settingsNavButton")
-//            .tag(0)
-            
             HomeView()
                 .tabItem {
                     Image(systemName: "house.fill")
