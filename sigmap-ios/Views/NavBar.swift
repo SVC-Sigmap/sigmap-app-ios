@@ -10,22 +10,24 @@ import SwiftUI
 struct NavBar: View {
     @State private var selection = 1
     var body: some View {
-        TabView(selection: $selection) {
-            HomeView()
-                .tabItem {
-                    Image(systemName: "house.fill")
-                    Text("Home")
-                }
-            .tag(1)
-            
-            LibraryView()
-                .tabItem {
-                    Image(systemName: "list.dash")
-                    Text("Library")
-                }
-            .tag(2)
+        ZStack {
+            TabView(selection: $selection) {
+                HomeView()
+                    .tabItem {
+                        Image(systemName: "house.fill")
+                        Text("Home")
+                    }
+                .tag(1)
+                
+                LibraryView()
+                    .tabItem {
+                        Image(systemName: "list.dash")
+                        Text("Library")
+                    }
+                .tag(2)
+            }
+            .accentColor(.white)
         }
-        .accentColor(.white)
     }
 }
 

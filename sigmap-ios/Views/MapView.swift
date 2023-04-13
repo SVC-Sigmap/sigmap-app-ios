@@ -18,12 +18,17 @@ struct MapView: View {
     var body: some View {
         ZStack{
             // background color
-            Color(UIColor(red: 30/255, green: 30/255, blue: 30/255, alpha: 1))
+            Color(.black)
                 .ignoresSafeArea()
             
                 .onAppear {
                     fetchScanData()
                 }
+            
+            Color(UIColor(red: 30/255, green: 30/255, blue: 30/255, alpha: 1))
+                .frame(height: 300)
+                .offset(y: -434)
+                .ignoresSafeArea()
             
             Text(roomName)
                 .font(.system(size: 30))
@@ -62,6 +67,11 @@ struct MapView: View {
             Divider()
                 .overlay(.white)
                 .frame(width: 500, height: 605, alignment: .bottom)
+            
+            Color(UIColor(red: 30/255, green: 30/255, blue: 30/255, alpha: 1))
+                .frame(height: 300)
+                .offset(y: 453)
+                .ignoresSafeArea()
         }
     }
     

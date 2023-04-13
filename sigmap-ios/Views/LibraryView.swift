@@ -25,12 +25,17 @@ struct LibraryView: View {
         NavigationView {
             ZStack {
                 // background color
-                Color(UIColor(red: 30/255, green: 30/255, blue: 30/255, alpha: 1))
+                Color(.black)
                     .ignoresSafeArea()
                 
                     .onAppear {
                         fetchAllScans()
                     }
+                
+                Color(UIColor(red: 30/255, green: 30/255, blue: 30/255, alpha: 1))
+                    .frame(height: 300)
+                    .offset(y: -454)
+                    .ignoresSafeArea()
                 
                 Text("WiFi Library")
                     .font(.system(size: 30))
@@ -74,6 +79,11 @@ struct LibraryView: View {
                 Divider()
                     .overlay(.white)
                     .frame(width: 500, height: 650, alignment: .bottom)
+                
+                Color(UIColor(red: 30/255, green: 30/255, blue: 30/255, alpha: 1))
+                    .frame(height: 300)
+                    .offset(y: 475)
+                    .ignoresSafeArea()
             }
         }
         .edgesIgnoringSafeArea(.all)
