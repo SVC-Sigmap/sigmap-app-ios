@@ -47,7 +47,7 @@ struct HomeView: View {
     var body: some View {
         ZStack {
             // Background color
-            Color(UIColor(red: 30/255, green: 30/255, blue: 30/255, alpha: 1))
+            Color(.black)
                 .frame(height: 1000)
                 .zIndex(-1)
                 .ignoresSafeArea()
@@ -159,6 +159,12 @@ struct HomeView: View {
             Divider()
                 .overlay(.white)
                 .frame(width: 500, height: 650, alignment: .bottom)
+            
+            Color(UIColor(red: 30/255, green: 30/255, blue: 30/255, alpha: 1))
+                .frame(height: 200)
+                .zIndex(-1)
+                .offset(y: 425)
+                .ignoresSafeArea()
         }
         
         // Render scan name input pop-up when scan is stopped
